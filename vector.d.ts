@@ -77,5 +77,7 @@ export class Int16Vector extends TypedVector {}
 export class Uint16Vector extends TypedVector {}
 export class Int32Vector extends TypedVector {}
 export class Uint32Vector extends TypedVector {}
+export class BigInt64Vector extends TypedVector {}
+export class BigUint64Vector extends TypedVector {}
 export class Float32Vector extends TypedVector {}
 export class Float64Vector extends TypedVector {}

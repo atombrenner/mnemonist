@@ -170,6 +170,16 @@ describe('Vector', function() {
     assert.strictEqual(vector.get(2), 24);
   });
 
+  it('should be possible to use the subclasses BigInt64Vector.', function() {
+    var vector = new Vector.BigInt64Vector({initialLength: 3});
+
+    vector.set(2, BigInt(24));
+
+    assert.strictEqual(vector.length, 3);
+
+    assert.strictEqual(vector.get(2), BigInt(24));
+  });
+
   it('should be possible to create a vector from an arbitrary iterable.', function() {
     var vector = Vector.from([1, 2, 3], Uint8Array);
 

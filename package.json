@@ -91,6 +91,9 @@
   },
   "eslintConfig": {
     "extends": "@yomguithereal/eslint-config",
+    "env": {
+      "es2020": true
+    },
     "parserOptions": {
       "ecmaVersion": 6,
       "ecmaFeatures": {
